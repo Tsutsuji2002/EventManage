@@ -1,0 +1,103 @@
+﻿.Event-App {
+    background-color: #D3D3D3;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Event-main {
+    display: flex;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.Event {
+    height: 100%;
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+}
+
+.EventDetail-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.Event-right {
+    display: flex;
+    display: flex;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.5;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.Speaker-name {
+    display: flex;
+    font-size: 15px;
+}
+
+.Event-left {
+    float: left;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.5;
+}
+
+.Event-title {
+    justify-content: center;
+    font-size: x-large;
+    font-weight: 650;
+}
+
+.Event-footer {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    float: right;
+}
+.content {
+    flex: 1;
+    margin-right: 5px;
+    background-color: #B2BEB5;
+    padding: 3px;
+    border-radius: 20px;
+}
+
+.Event_pic_item_center {
+    width: 100px;
+}
+
+.Event_text_div_center {
+    width: 100px;
+}
+
+.Event_Text {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.Event-file-container {
+    display: flex;
+}
+
+    .Event-file-container div {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+        .Event-file-container div div {
+            display: flex;
+            margin: auto;
+            width: fit-content;
+        }
+
+
+@media screen and (max-width: 768px) {
+    .Event_Text {
+        font-size: 15px;
+    }
+}

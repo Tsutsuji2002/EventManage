@@ -1,0 +1,29 @@
+﻿@model EventManagement.Models.Account
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <script src="~/Scripts/jquery-3.7.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.development.js"></script>
+    <script src=@Url.Content("~/Scripts/JS/Pages/Login.jsx")></script>
+    <link rel="stylesheet" href="~/Scripts/css/Pages/Login.css" />
+    <link rel="stylesheet" href="~/Scripts/css/index.css" />
+
+</head>
+<body>
+    <div id="login" data-login-url="@Url.Action("Login", "Account")">
+    </div>
+    <script>
+        const loginUrl = document.getElementById('login').dataset.loginUrl;
+    </script>
+</body>
+</html>
+

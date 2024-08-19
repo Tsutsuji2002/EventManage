@@ -1,0 +1,23 @@
+﻿@model IEnumerable<EventManagement.Models.EventType>
+
+@{
+    ViewBag.Title = "Competition";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="competition-container">
+
+    @Html.Action("CompeLeftPartial", "Event")
+
+    <div id="compe-content"></div>
+
+
+    @Html.Action("CompeRightPartial", "Event")
+</div>
+
+
+<script src=@Url.Content("~/Scripts/JS/Component_Competition/CompetitionContent.jsx") type="module"></script>
+<link rel="stylesheet" href="~/Scripts/css/Component_Competition/CompetitionContent.css" />
+<link rel="stylesheet" href="~/Scripts/css/Pages/ConfirmModal.css" />
+
+

@@ -1,0 +1,143 @@
+﻿.comments-section {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+    .comments-section textarea {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .comments-section button {
+        padding: 5px 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+.comments-list {
+    margin-top: 10px;
+}
+
+.comment {
+    background-color: #f8f9fa;
+    padding: 5px;
+    border-radius: 5px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin-bottom: 10px; /* Add space between comments */
+}
+
+    /* Add indentation for nested comments */
+    .comment.level-1 {
+        margin-left: 20px;
+    }
+
+    .comment.level-2 {
+        margin-left: 40px;
+    }
+
+    .comment.level-3 {
+        margin-left: 60px;
+    }
+
+    .comment.level-4 {
+        margin-left: 80px;
+    }
+
+    .comment.level-5 {
+        margin-left: 100px;
+    }
+
+    /* For levels beyond 5, maintain the same indentation */
+    .comment[class^="level-"]:not(.level-1):not(.level-2):not(.level-3):not(.level-4):not(.level-5) {
+        margin-left: 100px;
+    }
+
+    .comment p {
+        white-space: pre-wrap;
+        word-break: break-word;
+        max-width: 100%;
+    }
+
+.Comment-area {
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.Card-comment {
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    justify-content: space-between;
+}
+
+    .comment-header div {
+        display: flex;
+        align-items: center;
+    }
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid;
+}
+
+.author {
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.date {
+    color: #666;
+    font-size: 0.8em;
+}
+
+.comment-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.like-action,
+.reply-action,
+.show-replies-action {
+    cursor: pointer;
+    color: #007bff;
+    font-size: 0.9em;
+}
+
+    .like-action:hover,
+    .reply-action:hover,
+    .show-replies-action:hover {
+        text-decoration: underline;
+    }
+
+    .like-action.liked {
+        color: #1877f2;
+    }
+
+        .like-action.liked i {
+            font-weight: 900;
+        }
+
+/* Adjust the styling for nested replies */
+.replies {
+    margin-top: 10px;
+    border-left: 1px solid #ccc;
+    padding-left: 10px;
+}

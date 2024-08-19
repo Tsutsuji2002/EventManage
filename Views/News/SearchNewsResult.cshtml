@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "SearchNewsResult";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+
+    @Html.Action("LeftPartial", "Home")
+
+    <div id="content"></div>
+
+    @Html.Action("RightPartial", "Home")
+</div>
+
+
+
+<script src=@Url.Content("~/Scripts/JS/Component_News/NewsSearchbyContent.jsx") type="module"></script>
+<link rel="stylesheet" href="~/Scripts/css/Component_News/Content.css" />
+
+
+

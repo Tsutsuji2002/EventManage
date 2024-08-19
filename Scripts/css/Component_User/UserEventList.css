@@ -1,0 +1,227 @@
+﻿html,
+body,
+#root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.EvtList-wrapper {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: #EEEEEE;
+}
+
+.EvtList-user-container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    background-color: #EEEEEE;
+}
+
+.EvtList-aside {
+    border: 1px solid;
+    width: 250px;
+    background-color: #686D76;
+}
+
+.EvtList-container {
+    flex: 1;
+    display: flex;
+}
+
+.EvtList-create-blog {
+    min-height: 100vh;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid;
+}
+
+.EvtList-shower-container div span {
+    font-size: 18px;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    margin-left: 5px;
+    white-space: nowrap;
+    height: 30px;
+    display:flex;
+    align-items:center;
+    font-weight:bold;
+}
+
+.EvtList-shower-container span:hover {
+    background-color: #808080;
+    color:white;
+}
+
+.EvtList-shower-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+    .EvtList-shower-container div {
+        display:flex;
+        align-items:center;
+    }
+
+.EvtList-picHint {
+    display: flex;
+    width: 50px;
+    height:50px;
+
+}
+
+.EvtList-container {
+    flex: 1;
+    display: flex;
+}
+
+.Evt{
+    display:flex;
+    align-items:center;
+}
+
+.EvtList-header-table {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height:30px;
+
+    
+}
+
+.EvtList-input-layout {
+    height: 50px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 170px;
+    font-size: 18px;
+    order: -1;
+}
+
+.EvtList-Edit-item {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: white;
+}
+
+table {
+    table-layout: fixed;
+    border-spacing: 5px;
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    unicode-bidi: isolate;
+    border-color: gray;
+    background-color: #808080;
+}
+
+th span{
+    
+    color: white;
+    white-space:nowrap;
+}
+td {
+    background-color: #EEEEEE;
+}
+
+th, td {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #808080;
+}
+
+.EvtList-contact-container {
+    margin-top: 10px;
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.EvtList-image {
+    display: flex;
+    width: 120px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.EvtList-info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.EvtList-Description p {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.info-title-EvtList span {
+    font-size: 15px;
+    text-overflow: ellipsis;
+    color: blue;
+    cursor: pointer;
+    font-weight: bold;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.EvtList-button {
+    margin: auto;
+}
+
+    .EvtList-button button {
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+        border: 1px solid;
+        border-radius: 5px;
+        margin: auto;
+        padding: 10px;
+        width: 80px;
+    }
+
+.EvtList-title-EvtList p {
+    font-size: 15px;
+    text-overflow: ellipsis;
+    color: blue;
+    cursor: pointer;
+    font-weight: bold;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.info-EvtList span {
+    font-size: 13px;
+    opacity: 0.6;
+    font-style: italic;
+}
+
+.info-EvtList {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "SearchByType";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+
+    @Html.Action("LeftPartial", "Home")
+
+    <div id="content" data-type-name="@ViewBag.NewsType"></div>
+
+    @Html.Action("RightPartial", "Home")
+
+</div>
+
+
+
+<script src=@Url.Content("~/Scripts/JS/Component_News/NewsSearchbyType.jsx") type="module"></script>
+<link rel="stylesheet" href="~/Scripts/css/Component_News/Content.css" />
+

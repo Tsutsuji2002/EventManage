@@ -1,0 +1,279 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\VisualStudio\\Project\\EventManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F42236-9047-4198-9357-3737BF3CA6C4}|EventManagement.csproj|c:\\visualstudio\\project\\eventmanagement\\scripts\\js\\component_user\\usereventmanage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F2F42236-9047-4198-9357-3737BF3CA6C4}|EventManagement.csproj|solutionrelative:scripts\\js\\component_user\\usereventmanage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F42236-9047-4198-9357-3737BF3CA6C4}|EventManagement.csproj|c:\\visualstudio\\project\\eventmanagement\\areas\\admin\\views\\adaccount\\asidepartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F42236-9047-4198-9357-3737BF3CA6C4}|EventManagement.csproj|solutionrelative:areas\\admin\\views\\adaccount\\asidepartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F42236-9047-4198-9357-3737BF3CA6C4}|EventManagement.csproj|C:\\VisualStudio\\Project\\EventManagement\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F42236-9047-4198-9357-3737BF3CA6C4}|EventManagement.csproj|solutionrelative:views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F42236-9047-4198-9357-3737BF3CA6C4}|EventManagement.csproj|c:\\visualstudio\\project\\eventmanagement\\scripts\\js\\area_admin\\eventlist.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F2F42236-9047-4198-9357-3737BF3CA6C4}|EventManagement.csproj|solutionrelative:scripts\\js\\area_admin\\eventlist.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F42236-9047-4198-9357-3737BF3CA6C4}|EventManagement.csproj|c:\\visualstudio\\project\\eventmanagement\\scripts\\js\\area_admin\\aside.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F2F42236-9047-4198-9357-3737BF3CA6C4}|EventManagement.csproj|solutionrelative:scripts\\js\\area_admin\\aside.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F42236-9047-4198-9357-3737BF3CA6C4}|EventManagement.csproj|C:\\VisualStudio\\Project\\EventManagement\\scripts\\js\\component_user\\eventeditor.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F2F42236-9047-4198-9357-3737BF3CA6C4}|EventManagement.csproj|solutionrelative:scripts\\js\\component_user\\eventeditor.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F42236-9047-4198-9357-3737BF3CA6C4}|EventManagement.csproj|c:\\visualstudio\\project\\eventmanagement\\scripts\\js\\component_news\\navigation.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F2F42236-9047-4198-9357-3737BF3CA6C4}|EventManagement.csproj|solutionrelative:scripts\\js\\component_news\\navigation.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F42236-9047-4198-9357-3737BF3CA6C4}|EventManagement.csproj|c:\\visualstudio\\project\\eventmanagement\\views\\home\\navpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F42236-9047-4198-9357-3737BF3CA6C4}|EventManagement.csproj|solutionrelative:views\\home\\navpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F42236-9047-4198-9357-3737BF3CA6C4}|EventManagement.csproj|c:\\visualstudio\\project\\eventmanagement\\data\\dataconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F42236-9047-4198-9357-3737BF3CA6C4}|EventManagement.csproj|solutionrelative:data\\dataconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F42236-9047-4198-9357-3737BF3CA6C4}|EventManagement.csproj|C:\\VisualStudio\\Project\\EventManagement\\scripts\\css\\area_admin\\eventeditor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{F2F42236-9047-4198-9357-3737BF3CA6C4}|EventManagement.csproj|solutionrelative:scripts\\css\\area_admin\\eventeditor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F42236-9047-4198-9357-3737BF3CA6C4}|EventManagement.csproj|C:\\VisualStudio\\Project\\EventManagement\\scripts\\css\\component_user\\eventeditor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{F2F42236-9047-4198-9357-3737BF3CA6C4}|EventManagement.csproj|solutionrelative:scripts\\css\\component_user\\eventeditor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F42236-9047-4198-9357-3737BF3CA6C4}|EventManagement.csproj|C:\\VisualStudio\\Project\\EventManagement\\scripts\\js\\area_admin\\eventeditor.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F2F42236-9047-4198-9357-3737BF3CA6C4}|EventManagement.csproj|solutionrelative:scripts\\js\\area_admin\\eventeditor.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F42236-9047-4198-9357-3737BF3CA6C4}|EventManagement.csproj|C:\\VisualStudio\\Project\\EventManagement\\scripts\\css\\area_admin\\eventlist.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{F2F42236-9047-4198-9357-3737BF3CA6C4}|EventManagement.csproj|solutionrelative:scripts\\css\\area_admin\\eventlist.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F42236-9047-4198-9357-3737BF3CA6C4}|EventManagement.csproj|C:\\VisualStudio\\Project\\EventManagement\\scripts\\css\\area_admin\\accessdenied.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{F2F42236-9047-4198-9357-3737BF3CA6C4}|EventManagement.csproj|solutionrelative:scripts\\css\\area_admin\\accessdenied.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F42236-9047-4198-9357-3737BF3CA6C4}|EventManagement.csproj|C:\\VisualStudio\\Project\\EventManagement\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F42236-9047-4198-9357-3737BF3CA6C4}|EventManagement.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserEventManage.jsx",
+              "DocumentMoniker": "C:\\VisualStudio\\Project\\EventManagement\\Scripts\\JS\\Component_User\\UserEventManage.jsx",
+              "RelativeDocumentMoniker": "Scripts\\JS\\Component_User\\UserEventManage.jsx",
+              "ToolTip": "C:\\VisualStudio\\Project\\EventManagement\\Scripts\\JS\\Component_User\\UserEventManage.jsx",
+              "RelativeToolTip": "Scripts\\JS\\Component_User\\UserEventManage.jsx",
+              "ViewState": "AQIAAHwAAAAAAAAAAAAqwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-08-10T17:27:01.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Aside.jsx",
+              "DocumentMoniker": "C:\\VisualStudio\\Project\\EventManagement\\Scripts\\JS\\Area_Admin\\Aside.jsx",
+              "RelativeDocumentMoniker": "Scripts\\JS\\Area_Admin\\Aside.jsx",
+              "ToolTip": "C:\\VisualStudio\\Project\\EventManagement\\Scripts\\JS\\Area_Admin\\Aside.jsx",
+              "RelativeToolTip": "Scripts\\JS\\Area_Admin\\Aside.jsx",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwCIAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-08-10T16:35:29.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AsidePartial.cshtml",
+              "DocumentMoniker": "C:\\VisualStudio\\Project\\EventManagement\\Areas\\Admin\\Views\\ADAccount\\AsidePartial.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\ADAccount\\AsidePartial.cshtml",
+              "ToolTip": "C:\\VisualStudio\\Project\\EventManagement\\Areas\\Admin\\Views\\ADAccount\\AsidePartial.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\ADAccount\\AsidePartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-10T16:35:20.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Navigation.jsx",
+              "DocumentMoniker": "C:\\VisualStudio\\Project\\EventManagement\\Scripts\\JS\\Component_News\\Navigation.jsx",
+              "RelativeDocumentMoniker": "Scripts\\JS\\Component_News\\Navigation.jsx",
+              "ToolTip": "C:\\VisualStudio\\Project\\EventManagement\\Scripts\\JS\\Component_News\\Navigation.jsx",
+              "RelativeToolTip": "Scripts\\JS\\Component_News\\Navigation.jsx",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAwwHIAAABgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-08-10T16:04:28.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NavPartial.cshtml",
+              "DocumentMoniker": "C:\\VisualStudio\\Project\\EventManagement\\Views\\Home\\NavPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\NavPartial.cshtml",
+              "ToolTip": "C:\\VisualStudio\\Project\\EventManagement\\Views\\Home\\NavPartial.cshtml",
+              "RelativeToolTip": "Views\\Home\\NavPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-10T16:04:09.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DataConnection.cs",
+              "DocumentMoniker": "C:\\VisualStudio\\Project\\EventManagement\\Data\\DataConnection.cs",
+              "RelativeDocumentMoniker": "Data\\DataConnection.cs",
+              "ToolTip": "C:\\VisualStudio\\Project\\EventManagement\\Data\\DataConnection.cs",
+              "RelativeToolTip": "Data\\DataConnection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T15:47:42.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EventEditor.css",
+              "DocumentMoniker": "C:\\VisualStudio\\Project\\EventManagement\\Scripts\\css\\Area_Admin\\EventEditor.css",
+              "RelativeDocumentMoniker": "Scripts\\css\\Area_Admin\\EventEditor.css",
+              "ToolTip": "C:\\VisualStudio\\Project\\EventManagement\\Scripts\\css\\Area_Admin\\EventEditor.css",
+              "RelativeToolTip": "Scripts\\css\\Area_Admin\\EventEditor.css",
+              "ViewState": "AQIAAMgAAAAAAAAAAADwv+YAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-05T08:20:41.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EventList.css",
+              "DocumentMoniker": "C:\\VisualStudio\\Project\\EventManagement\\Scripts\\css\\Area_Admin\\EventList.css",
+              "RelativeDocumentMoniker": "Scripts\\css\\Area_Admin\\EventList.css",
+              "ToolTip": "C:\\VisualStudio\\Project\\EventManagement\\Scripts\\css\\Area_Admin\\EventList.css",
+              "RelativeToolTip": "Scripts\\css\\Area_Admin\\EventList.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-05T08:20:39.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EventEditor.jsx",
+              "DocumentMoniker": "C:\\VisualStudio\\Project\\EventManagement\\Scripts\\JS\\Area_Admin\\EventEditor.jsx",
+              "RelativeDocumentMoniker": "Scripts\\JS\\Area_Admin\\EventEditor.jsx",
+              "ToolTip": "C:\\VisualStudio\\Project\\EventManagement\\Scripts\\JS\\Area_Admin\\EventEditor.jsx",
+              "RelativeToolTip": "Scripts\\JS\\Area_Admin\\EventEditor.jsx",
+              "ViewState": "AQIAAIMBAAAAAAAAAAAAwI4BAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-08-05T08:17:04.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EventEditor.css",
+              "DocumentMoniker": "C:\\VisualStudio\\Project\\EventManagement\\Scripts\\css\\Component_User\\EventEditor.css",
+              "RelativeDocumentMoniker": "Scripts\\css\\Component_User\\EventEditor.css",
+              "ToolTip": "C:\\VisualStudio\\Project\\EventManagement\\Scripts\\css\\Component_User\\EventEditor.css",
+              "RelativeToolTip": "Scripts\\css\\Component_User\\EventEditor.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAMYBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-05T08:16:47.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EventList.jsx",
+              "DocumentMoniker": "C:\\VisualStudio\\Project\\EventManagement\\Scripts\\JS\\Area_Admin\\EventList.jsx",
+              "RelativeDocumentMoniker": "Scripts\\JS\\Area_Admin\\EventList.jsx",
+              "ToolTip": "C:\\VisualStudio\\Project\\EventManagement\\Scripts\\JS\\Area_Admin\\EventList.jsx",
+              "RelativeToolTip": "Scripts\\JS\\Area_Admin\\EventList.jsx",
+              "ViewState": "AQIAACwBAAAAAAAAAAAUwDcBAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-08-05T08:15:34.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EventEditor.jsx",
+              "DocumentMoniker": "C:\\VisualStudio\\Project\\EventManagement\\Scripts\\JS\\Component_User\\EventEditor.jsx",
+              "RelativeDocumentMoniker": "Scripts\\JS\\Component_User\\EventEditor.jsx",
+              "ToolTip": "C:\\VisualStudio\\Project\\EventManagement\\Scripts\\JS\\Component_User\\EventEditor.jsx",
+              "RelativeToolTip": "Scripts\\JS\\Component_User\\EventEditor.jsx",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-08-05T08:14:06.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AccessDenied.css",
+              "DocumentMoniker": "C:\\VisualStudio\\Project\\EventManagement\\Scripts\\css\\Area_Admin\\AccessDenied.css",
+              "RelativeDocumentMoniker": "Scripts\\css\\Area_Admin\\AccessDenied.css",
+              "ToolTip": "C:\\VisualStudio\\Project\\EventManagement\\Scripts\\css\\Area_Admin\\AccessDenied.css",
+              "RelativeToolTip": "Scripts\\css\\Area_Admin\\AccessDenied.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-05T08:12:49.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccessDenied.cshtml",
+              "DocumentMoniker": "C:\\VisualStudio\\Project\\EventManagement\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\AccessDenied.cshtml",
+              "ToolTip": "C:\\VisualStudio\\Project\\EventManagement\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeToolTip": "Views\\Account\\AccessDenied.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-05T08:10:13.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\VisualStudio\\Project\\EventManagement\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\VisualStudio\\Project\\EventManagement\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwBMAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T08:08:56.147Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+﻿html,
+body,
+#root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Update-wrapper {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: #EEEEEE;
+}
+
+.main-NewsUp-container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.NewsUp-create-blog {
+    width: fit-content;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid;
+}
+
+.NewsUp-shower-container div span {
+    font-size: 18px;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    margin-left: 5px;
+}
+
+.NewsUp-shower-container span:hover {
+    background-color: rgb(252, 185, 97);
+}
+
+.NewsUp-shower-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+    .NewsUp-shower-container div {
+        margin-top: 10px;
+    }
+
+.NewsUp-picHint {
+    display: flex;
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.NewsUp-container {
+    flex: 1;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.NewsUp-aside {
+    border: 1px solid;
+    width: 250px;
+    background-color: #686D76;
+}
+
+.NewsUp-NewsImage div img {
+    width: 150px;
+}
+
+.NewsUp-NewsImage div {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+    .NewsUp-NewsImage div button {
+        display: flex;
+        height: fit-content;
+        border: 1px solid;
+        padding: 10px;
+        margin-left: 10px;
+        background-color: white;
+        border-radius: 5px;
+    }
+
+.NewsUp-NewsName input {
+    height: 30px;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.NewsUp-catalog {
+    display: flex;
+    align-items: center;
+}
+
+    .NewsUp-catalog p {
+        margin-right: 20px;
+    }
+
+.NewsUp-Catalog-input {
+    border: 1px solid;
+    border-radius: 5px;
+    height: 30px;
+    padding-left: 5px;
+    width: 30%;
+}
+
+.NewsUp-btn-post {
+    padding: 10px;
+    width: fit-content;
+    margin: auto;
+}
+
+    .NewsUp-btn-post button {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid;
+    }
+
+.NewsUp-editor {
+    flex: 1;
+}

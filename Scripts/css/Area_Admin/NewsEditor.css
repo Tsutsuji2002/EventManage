@@ -1,0 +1,51 @@
+﻿.Admin-NewsImage div {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+    .Admin-NewsImage div button {
+        display: flex;
+        height: fit-content;
+        border: 1px solid;
+        padding: 10px;
+        margin-left: 10px;
+        background-color: white;
+        border-radius: 5px;
+    }
+
+.Add-catalog {
+    display: flex;
+    align-items: center;
+}
+
+    .Add-catalog p {
+        margin-right: 20px;
+    }
+
+.Admin-NewsImage div img {
+    width: 150px;
+}
+
+.Catelog-input {
+    height: 30px;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 20%;
+    margin-top: 10px;
+}
+
+.Admin-NewsName input {
+    height: 30px;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.Catalog-input {
+    border: 1px solid;
+    border-radius: 5px;
+    height: 30px;
+    padding-left: 5px;
+    width: 30%;
+}

@@ -1,0 +1,403 @@
+﻿html,
+body,
+#root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.Account-right-container {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: 100%;
+}
+
+form {
+    width: 100%;
+}
+
+.main-panel {
+    flex: 1;
+}
+#main-panel {
+    flex: 1;
+}
+
+.container-admin-table {
+    margin: 20px;
+}
+
+.admin-container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.card {
+    background-color: skyblue;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.card-body {
+    width: 100%;
+}
+
+.body-nav-container {
+    display: flex;
+    background-color: #D6BD98;
+}
+
+
+.picHidden {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    border: 1px solid;
+    background-color: white;
+    padding: 0;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.container-admin-form {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.AdminHolder {
+    display: flex;
+    align-self: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    order: 2;
+    cursor: pointer;
+}
+
+.admin-nav-name {
+    order: 3;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.admin-form {
+    display: flex;
+    order: 1;
+    padding: 10px;
+    margin-right: 30px;
+}
+
+.admin-input {
+    border-radius: 5px;
+    margin-right: 3px;
+}
+
+.admin-submit {
+    border-radius: 5px;
+    cursor: pointer;
+    width: 70px;
+    white-space: nowrap;
+}
+
+.page-inner {
+    width: 100%;
+}
+
+.card-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.user-text {
+    font-size: 10px;
+}
+
+.ColumnName {
+    width: 200px;
+}
+
+.addbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue;
+    width: fit-content;
+    font-weight: bold;
+    height: auto;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+    color: white;
+    cursor: pointer;
+    background-color: blue;
+    user-select: none;
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+}
+
+.Password-column {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .Password-column span {
+        font-size: 15px;
+    }
+
+    .Password-column button {
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+
+
+#Account-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+    #Account-table th,
+    #Account-table td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    #Account-table thead {
+        background-color: #f2f2f2;
+    }
+
+    #Account-table th {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+.table-id {
+    width: 50px;
+}
+
+.edit-account-container {
+    width: fit-content;
+    margin: auto;
+}
+
+.Account-input-layout {
+    width: 96%;
+    height: 30px;
+}
+
+.btn-edit {
+    padding: 6px 12px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#btn-fix {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#btn-delete {
+    background-color: #f44336;
+    color: white;
+}
+
+#btn-info {
+    background-color: #008CBA;
+    color: white;
+}
+
+.btn-edit:hover {
+    opacity: 0.8;
+}
+
+#Account-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+.admin-sidebar {
+    display: block;
+    background-color: #27374D;
+    width: 250px;
+    height: 100vh;
+}
+
+.Account-Edit-container {
+    width: 290px;
+    border: 1px solid;
+    margin-top: 20px;
+    padding: 10px;
+    height: fit-content;
+    background-color: rgb(113, 253, 253);
+}
+
+.Account-form input {
+    margin-bottom: 5px;
+}
+
+.Account-input {
+    width: 94%;
+}
+
+.Edit-submit {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    background-color: rgb(105, 236, 236);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Account-user-info {
+    width: 300px;
+    border: 1px solid;
+    padding: 5px;
+    margin-top: 20px;
+    background-color: rgb(113, 253, 253);
+}
+
+    .Account-user-info div {
+        margin-top: 10px;
+    }
+
+        .Account-user-info div span {
+            font-size: 18px;
+        }
+
+        .Account-user-info div img {
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+            border: 1px solid;
+            display: flex;
+            margin: auto;
+        }
+
+@media screen and (max-width: 768px) {
+    .Account-right-container {
+        width: 768px;
+        overflow-x: scroll;
+        border: 1px solid;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .AdminHolder {
+        display: none;
+    }
+
+    .admin-nav-name {
+        display: none;
+    }
+
+    .container-admin-form {
+        justify-content: flex-start;
+    }
+
+    .Account-right-container {
+        flex-direction: column;
+        width: 320px;
+        overflow-x: scroll;
+        border: 1px solid;
+    }
+
+    .container-account-block {
+        order: -1;
+        margin-left: 20px;
+    }
+
+    .Account-form {
+        width: 100%;
+    }
+}
+.multi-select-dropdown {
+    position: relative;
+    width: 300px;
+    font-family: Arial, sans-serif;
+}
+
+    .multi-select-dropdown label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+.dropdown-header {
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .dropdown-header::after {
+        content: '\25BC';
+        font-size: 12px;
+    }
+
+.dropdown-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.dropdown-item {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+    .dropdown-item:hover {
+        background-color: #f0f0f0;
+    }
+
+    .dropdown-item input[type="checkbox"] {
+        margin-right: 10px;
+    }
+
+    .dropdown-item label {
+        margin: 0;
+        cursor: pointer;
+    }

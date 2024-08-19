@@ -1,0 +1,132 @@
+﻿html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Up-wrapper {
+    display: flex;
+    flex-direction: row;
+    min-height: 100%;
+    width: 100%;
+    background-color: #EEEEEE;
+}
+
+.Up-sidebar {
+    background-color: #3f5064;
+}
+
+.Up-main-panel {
+    height: 100%;
+    flex: 1;
+}
+
+.Up-picHidden {
+    display: flex;
+    width: 40px;
+    border: 1px solid;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.Up-form {
+    display: flex;
+    white-space: nowrap;
+    height: 100%;
+}
+
+.Up-input {
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 3px;
+}
+
+.Up-admin-submit {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    white-space: nowrap;
+}
+
+.Up-page-inner {
+    display: flex;
+    flex-direction: row;
+}
+
+.Up-create-blog {
+    width: 100%;
+    flex: 1;
+    padding: 10px;
+    border-right: 1px solid;
+}
+
+.Up-editor {
+    flex: 1;
+}
+
+.Up-btn-post {
+    padding: 10px;
+    width: fit-content;
+    margin: auto;
+}
+
+    .Up-btn-post button {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid;
+    }
+
+    .Up-btn-post span {
+        font-size: 15px;
+    }
+
+.Up-body-nav-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(155, 128, 74);
+}
+
+.Up-NewsImage div {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+    .Up-NewsImage div button {
+        display: flex;
+        height: fit-content;
+        border: 1px solid;
+        padding: 10px;
+        margin-left: 10px;
+        background-color: white;
+        border-radius: 5px;
+    }
+
+.Up-catalog {
+    display: flex;
+    align-items: center;
+}
+
+    .Up-catalog p {
+        margin-right: 20px;
+    }
+
+.Up-NewsImage div img {
+    width: 150px;
+}
+
+.Up-NewsName input {
+    height: 30px;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.Up-Catalog-input {
+    border: 1px solid;
+    border-radius: 5px;
+    height: 30px;
+    width: 51%;
+}

@@ -1,0 +1,237 @@
+﻿.Update-wrapper {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: fit-content;
+    background-color: #EEEEEE;
+}
+
+.UpEdit-aside {
+    border: 1px solid;
+    width: 250px;
+    background-color: #686D76;
+}
+
+.UpEdit-shower-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+    .UpEdit-shower-container div {
+        margin-top: 10px;
+    }
+
+.UpEdit-select {
+    border: 1px solid;
+    border-radius: 5px;
+    height: 30px;
+    padding-left: 5px;
+    width: 300px;
+}
+
+.UpEdit-shower-container div span {
+    font-size: 18px;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    margin-left: 5px;
+}
+
+.UpEdit-shower-container span:hover {
+    background-color: rgb(252, 185, 97);
+}
+
+.UpEdit-container {
+    flex: 1;
+    display: flex;
+}
+
+.main-UpEdit-container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.hint-container {
+    border: 1px solid;
+    width: 100%;
+}
+
+.UpEdit-picHint {
+    display: flex;
+    width: 40px;
+}
+
+#container {
+    min-height: 100vh;
+    width: 100%
+}
+
+.UpEdit-create-blog {
+    width: fit-content;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid;
+}
+
+.UpEdit-Image-Container button {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.UpEdit-Image-Container {
+    display: flex;
+    align-items: center;
+}
+
+.input-layout {
+    border: 1px solid;
+    border-radius: 5px;
+    height: 30px;
+    padding-left: 5px;
+    width: 50%;
+}
+
+.UpEdit-EvenName {
+    display: flex;
+    flex-direction: row;
+}
+
+.UpEdit-Event-Name {
+    border-right: 1px solid;
+    padding-right: 10px;
+}
+
+.UpEdit-input-layout {
+    border: 1px solid;
+    border-radius: 5px;
+    height: 30px;
+    padding-left: 5px;
+    width: 540px;
+}
+
+.UpEdit-Event-Name input {
+    display: flex;
+    width: 300px;
+}
+
+.UpEdit-ID input {
+    width: 90px;
+}
+
+.UpEdit-ID {
+    margin-left: 10px;
+}
+
+.UpEdit-radio-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.UpEdit-radio-div {
+    display: flex;
+    width: fit-content;
+}
+
+.UpEdit-radio-container input {
+    margin: 5px;
+    margin-left: 10px;
+}
+
+.UpEdit-editor {
+    flex: 1;
+}
+
+.UpEdit-btn-post {
+    padding: 10px;
+    width: fit-content;
+    margin: auto;
+}
+
+    .UpEdit-btn-post button {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid;
+    }
+
+    .UpEdit-btn-post span {
+        font-size: 15px;
+    }
+
+
+.UpEdit-file-select {
+    width: 300px;
+    border: 1px solid;
+    padding: 5px;
+    height: fit-content;
+    margin-left: 3px;
+}
+
+    .UpEdit-file-select input {
+        overflow-x: scroll;
+    }
+
+.UpEdit-file-selector {
+    cursor: pointer;
+    padding: 10px;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+}
+
+.UpEdit-file-item {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-Radius: 5px;
+    border: 1px solid;
+    justify-content: space-around;
+}
+
+.UpEdit-file-Name {
+    margin-left: 10px;
+    width: 70%;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.UpEdit-delete-icon {
+    cursor: pointer;
+    color: red;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .UpEdit-container {
+        flex: 1;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .UpEdit-editor {
+        width: 320px;
+    }
+
+    .UpEdit-EvenName {
+        flex-direction: column;
+    }
+
+    .UpEdit-ID {
+        order: -1;
+    }
+
+    .UpEdit-Event-Name {
+        border: none;
+    }
+}

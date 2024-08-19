@@ -1,0 +1,69 @@
+﻿.App {
+    background-color: #D3D3D3;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+App-main {
+    height:auto;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+}
+.pagination {
+    display: flex;
+    margin: auto;
+    padding: 10px;
+}
+ .pagination div {
+     width:fit-content;
+     display:flex;
+     margin:auto;
+ }
+
+    .pagesNum a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid;
+        cursor: pointer;
+        width: 40px;
+        padding: 3px;
+        font-size: 18px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border-radius: 10px;
+        background-color: #808080;
+        color: white;
+        font-weight:bold;
+        height: 40px;
+    }
+
+        .pagesNum a:hover {
+            background-color: blue;
+            color: white;
+            font-weight:bold;
+        }
+
+.PagesButton {
+    border: 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    width:60px;
+    font-size: 18px;
+    background-color: #808080;
+    color:white;
+    font-weight:bold;
+    display:flex;
+    justify-content:center;
+    padding:10px;
+    align-items:center;
+}
+
+    .PagesButton:active {
+        background-color: blue;
+        color: white;
+    }

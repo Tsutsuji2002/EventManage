@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "NewsUpdate";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
+}
+
+<div id="main-panel">
+</div>
+<script>
+        window.newsId = @ViewBag.NewsID;
+</script>
+<script src=@Url.Content("~/Scripts/JS/Area_Admin/NewsUpdate.jsx") crossorigin="anonymous"></script>
+<link rel="stylesheet" href="~/Scripts/css/Area_Admin/NewsUpdate.css" />

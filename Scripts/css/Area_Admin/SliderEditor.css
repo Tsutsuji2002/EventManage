@@ -1,0 +1,58 @@
+﻿#table-slider td,
+#table-slider th {
+    border: 1px solid;
+    border-spacing: 5px;
+}
+
+.slider-images {
+    width: 500px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.add-pic-slider {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+    .add-pic-slider span {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    .add-pic-slider button {
+        height: 40px;
+        width: 100px;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+.Limit-container {
+    width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.slider-Name {
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.Silder-link {
+    white-space: nowrap;
+}
+
+.slider-button span {
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}

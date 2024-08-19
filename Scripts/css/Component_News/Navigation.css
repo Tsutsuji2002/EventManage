@@ -1,0 +1,231 @@
+﻿#nav {
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    flex-direction: row;
+    background-color: #D3D3D3;
+}
+
+.App-nav {
+    display: flex;
+    background-color: #B2BEB5;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.resize-button {
+    display: none;
+    position: relative;
+    font-size: 20px;
+    margin-left: 10px;
+    border-radius: 3px;
+    width: 30px;
+    height: auto;
+}
+
+.nav-div-block {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+}
+
+    .nav-div-block b {
+        margin-left: 5%;
+    }
+
+.nav-a {
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.avatar-container {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar-inner {
+    display: flex;
+}
+
+.avatar-container .avatar-inner span {
+    font-size: 15px;
+    order: 2;
+    color: blue;
+    display: flex;
+    float: right;
+    height: 100%;
+    align-content: center;
+}
+
+.userHolder {
+    order: 1;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.avatardrop {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    position: absolute;
+    top: 50px;
+    width: 125px;
+    background-color: lightgray;
+}
+
+    .avatardrop span {
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+        .avatardrop span a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .avatardrop span:hover {
+            background-color: blue;
+            color: white;
+        }
+
+.nav-search {
+    display: flex;
+    border: 2px solid;
+    width: 200px;
+}
+
+.formSearch {
+    width: 230px;
+    padding-top: 10px;
+    display: flex;
+}
+
+.nav_input_text {
+    width: 150px;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.nav_btn_search {
+    margin-left: 3px;
+    width: 80px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    background-color: #6699CC;
+    color: black;
+    border-radius: 20px;
+}
+
+.dropdown-menu {
+    display: none;
+    justify-content: center;
+    position: absolute;
+    width: 250px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    height: fit-content;
+    border-radius: 10px;
+}
+
+.drop-a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#drop {
+    padding: 5px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    border: 1px solid blue;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px grey;
+    white-space: nowrap;
+    margin-right: 2px;
+}
+
+    #drop:hover {
+        background-color: blue;
+        color: white;
+    }
+
+.nav-a2 {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    width: 90%;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+    opacity: 0.7;
+}
+
+    .nav-a2:hover {
+        background-color: rgb(82, 82, 243);
+        opacity: 1;
+    }
+
+.nav-a:hover {
+    background-color: #D3D3D3;
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav-div-block {
+        display: none;
+    }
+
+    .resize-button {
+        display: flex;
+    }
+
+    .formSearch {
+        display: flex;
+    }
+
+    .resize-nav {
+        display: flex;
+    }
+
+    #drop {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #drop {
+        margin-left: 3px;
+        margin-right: 3px;
+        font-size: 10px;
+        white-space: nowrap;
+    }
+
+    .nav_input_text {
+        width: 140px;
+    }
+
+    .nav_btn_search {
+        width: 70px;
+        white-space: nowrap;
+    }
+}

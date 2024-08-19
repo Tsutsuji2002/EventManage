@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="EventManagement" Class="EventManagementDataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.Accounts" Member="Accounts">
+    <Type Name="Account">
+      <Column Name="AccountID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AccountName" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Account_User" Member="Users" ThisKey="AccountID" OtherKey="AccountID" Type="User" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Users" Member="Users">
+    <Type Name="User">
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AccountID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="UserEmail" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="UserAvatar" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="UserAddress" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="UserPhone" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="User_EventInfo" Member="EventInfos" ThisKey="UserID" OtherKey="EventCreator" Type="EventInfo" />
+      <Association Name="User_New" Member="News" ThisKey="UserID" OtherKey="NewsAuthor" Type="New" />
+      <Association Name="User_Registration" Member="Registrations" ThisKey="UserID" OtherKey="UserID" Type="Registration" />
+      <Association Name="User_UserRole" Member="UserRoles" ThisKey="UserID" OtherKey="UserID" Type="UserRole" />
+      <Association Name="User_CommentLike" Member="CommentLikes" ThisKey="UserID" OtherKey="UserID" Type="CommentLike" />
+      <Association Name="User_Comment" Member="Comments" ThisKey="UserID" OtherKey="UserID" Type="Comment" />
+      <Association Name="Account_User" Member="Account" ThisKey="AccountID" OtherKey="AccountID" Type="Account" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ADMIN" Member="ADMINs">
+    <Type Name="ADMIN">
+      <Column Name="AdminID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AdminName" Type="System.String" DbType="NVarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="AdminPassword" Type="System.String" DbType="NVarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CompetitionFeatures" Member="CompetitionFeatures">
+    <Type Name="CompetitionFeature">
+      <Column Name="CompetitionID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="[Order]" Member="Order" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CompetitionNewest" Member="CompetitionNewests">
+    <Type Name="CompetitionNewest">
+      <Column Name="CompetitionID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="[Order]" Member="Order" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ConferenceFeatures" Member="ConferenceFeatures">
+    <Type Name="ConferenceFeature">
+      <Column Name="ConferenceID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="[Order]" Member="Order" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ConferenceNewest" Member="ConferenceNewests">
+    <Type Name="ConferenceNewest">
+      <Column Name="ConferenceID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="[Order]" Member="Order" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EventDocuments" Member="EventDocuments">
+    <Type Name="EventDocument">
+      <Column Name="DocumentID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DocumentTitle" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="DocumentFilePath" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="DocumentDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="DocumentEvent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="EventInfo_EventDocument" Member="EventInfo" ThisKey="DocumentEvent" OtherKey="EventID" Type="EventInfo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EventInfos" Member="EventInfos">
+    <Type Name="EventInfo">
+      <Column Name="EventID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EventName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="EventCode" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="EventType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EventDate" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="EventRule" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EventParticipants" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EventDescription" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EventImage" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EventCreator" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LocationID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="EventInfo_EventDocument" Member="EventDocuments" ThisKey="EventID" OtherKey="DocumentEvent" Type="EventDocument" />
+      <Association Name="EventInfo_Registration" Member="Registrations" ThisKey="EventID" OtherKey="EventID" Type="Registration" />
+      <Association Name="EventInfo_SpeakersAssign" Member="SpeakersAssigns" ThisKey="EventID" OtherKey="EventID" Type="SpeakersAssign" />
+      <Association Name="User_EventInfo" Member="User" ThisKey="EventCreator" OtherKey="UserID" Type="User" IsForeignKey="true" />
+      <Association Name="EventType_EventInfo" Member="EventType1" ThisKey="EventType" OtherKey="EventTypeID" Type="EventType" IsForeignKey="true" />
+      <Association Name="Location_EventInfo" Member="Location" ThisKey="LocationID" OtherKey="LocationID" Type="Location" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EventTypes" Member="EventTypes">
+    <Type Name="EventType">
+      <Column Name="EventTypeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EventTypeName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="EventType_EventInfo" Member="EventInfos" ThisKey="EventTypeID" OtherKey="EventType" Type="EventInfo" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Locations" Member="Locations">
+    <Type Name="Location">
+      <Column Name="LocationID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LocationName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="LocationAddress" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="LocationCapacity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Location_EventInfo" Member="EventInfos" ThisKey="LocationID" OtherKey="LocationID" Type="EventInfo" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Navigations" Member="Navigations">
+    <Type Name="Navigation">
+      <Column Name="NavID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NavName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="NavLink" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.News" Member="News">
+    <Type Name="New">
+      <Column Name="NewsID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NewsTitle" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="NewsContent" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="NewsAuthor" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NewsDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="NewsTypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NewsImage" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="NewsLink" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="New_NewsFeature" Member="NewsFeature" ThisKey="NewsID" OtherKey="NewsID" Type="NewsFeature" Cardinality="One" />
+      <Association Name="New_NewsNewest" Member="NewsNewest" ThisKey="NewsID" OtherKey="NewsID" Type="NewsNewest" Cardinality="One" />
+      <Association Name="New_Comment" Member="Comments" ThisKey="NewsID" OtherKey="NewsID" Type="Comment" />
+      <Association Name="User_New" Member="User" ThisKey="NewsAuthor" OtherKey="UserID" Type="User" IsForeignKey="true" />
+      <Association Name="NewsType_New" Member="NewsType" ThisKey="NewsTypeID" OtherKey="NewsTypeID" Type="NewsType" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NewsFeatures" Member="NewsFeatures">
+    <Type Name="NewsFeature">
+      <Column Name="NewsID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="[Order]" Member="Order" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="New_NewsFeature" Member="New" ThisKey="NewsID" OtherKey="NewsID" Type="New" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NewsNewest" Member="NewsNewests">
+    <Type Name="NewsNewest">
+      <Column Name="NewsID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="[Order]" Member="Order" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="New_NewsNewest" Member="New" ThisKey="NewsID" OtherKey="NewsID" Type="New" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NewsTypes" Member="NewsTypes">
+    <Type Name="NewsType">
+      <Column Name="NewsTypeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NewsTypeName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NewsTypeLink" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="NewsType_New" Member="News" ThisKey="NewsTypeID" OtherKey="NewsTypeID" Type="New" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Registrations" Member="Registrations">
+    <Type Name="Registration">
+      <Column Name="RegistrationID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EventID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RegistratedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="EventInfo_Registration" Member="EventInfo" ThisKey="EventID" OtherKey="EventID" Type="EventInfo" IsForeignKey="true" />
+      <Association Name="User_Registration" Member="User" ThisKey="UserID" OtherKey="UserID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Roles" Member="Roles">
+    <Type Name="Role">
+      <Column Name="RoleID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RoleName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="RoleDescription" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Role_UserRole" Member="UserRoles" ThisKey="RoleID" OtherKey="RoleID" Type="UserRole" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SeminarFeatures" Member="SeminarFeatures">
+    <Type Name="SeminarFeature">
+      <Column Name="SeminarID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="[Order]" Member="Order" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SeminarNewest" Member="SeminarNewests">
+    <Type Name="SeminarNewest">
+      <Column Name="SeminarID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="[Order]" Member="Order" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Sliders" Member="Sliders">
+    <Type Name="Slider">
+      <Column Name="SliderID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SliderName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SliderImage" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SliderLink" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="[Order]" Member="Order" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Speakers" Member="Speakers">
+    <Type Name="Speaker">
+      <Column Name="SpeakerID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SpeakerName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Speaker_SpeakersAssign" Member="SpeakersAssigns" ThisKey="SpeakerID" OtherKey="SpeakerID" Type="SpeakersAssign" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SpeakersAssigns" Member="SpeakersAssigns">
+    <Type Name="SpeakersAssign">
+      <Column Name="SpeakersAssignID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SpeakerID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EventID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="EventInfo_SpeakersAssign" Member="EventInfo" ThisKey="EventID" OtherKey="EventID" Type="EventInfo" IsForeignKey="true" />
+      <Association Name="Speaker_SpeakersAssign" Member="Speaker" ThisKey="SpeakerID" OtherKey="SpeakerID" Type="Speaker" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserRoles" Member="UserRoles">
+    <Type Name="UserRole">
+      <Column Name="UserRoleID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RoleID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Role_UserRole" Member="Role" ThisKey="RoleID" OtherKey="RoleID" Type="Role" IsForeignKey="true" />
+      <Association Name="User_UserRole" Member="User" ThisKey="UserID" OtherKey="UserID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CommentLikes" Member="CommentLikes">
+    <Type Name="CommentLike">
+      <Column Name="LikeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CommentID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="User_CommentLike" Member="User" ThisKey="UserID" OtherKey="UserID" Type="User" IsForeignKey="true" />
+      <Association Name="Comment_CommentLike" Member="Comment" ThisKey="CommentID" OtherKey="CommentID" Type="Comment" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Comments" Member="Comments">
+    <Type Name="Comment">
+      <Column Name="CommentID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NewsID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ParentsCommentID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Content" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="CommentLikes" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Comment_CommentLike" Member="CommentLikes1" ThisKey="CommentID" OtherKey="CommentID" Type="CommentLike" />
+      <Association Name="New_Comment" Member="New" ThisKey="NewsID" OtherKey="NewsID" Type="New" IsForeignKey="true" />
+      <Association Name="User_Comment" Member="User" ThisKey="UserID" OtherKey="UserID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

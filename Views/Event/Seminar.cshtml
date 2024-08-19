@@ -1,0 +1,24 @@
+﻿@model IEnumerable<EventManagement.Models.EventInfo>
+
+@{
+    ViewBag.Title = "Seminar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="semi-container">
+
+    @Html.Action("SemiLeftPartial", "Event")
+
+    <div id="semi-content"></div>
+
+    <script>
+        //var newestNews = @Html.Raw(Json.Encode(Model));
+    </script>
+
+    @Html.Action("SemiRightPartial", "Event")
+</div>
+
+
+<script src=@Url.Content("~/Scripts/JS/Component_Seminar/SeminarContent.jsx") type="module"></script>
+<link rel="stylesheet" href="~/Scripts/css/Component_Seminar/SeminarContent.css" />
+<link rel="stylesheet" href="~/Scripts/css/Pages/ConfirmModal.css" />
+

@@ -1,0 +1,56 @@
+﻿#aside {
+    background-color: #27374D;
+}
+.admin-sidebar-content {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    position: sticky;
+}
+
+.admin-aside-pic-container {
+    width: 100%;
+    border-bottom: 2px solid;
+    background-color: #0f1927;
+}
+
+    .admin-aside-pic-container div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+        .admin-aside-pic-container div span {
+            font-size: 15px;
+            font-weight: 500;
+            color: white;
+            opacity: 0.7;
+            font-style: italic;
+        }
+
+.aside-avatar {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.option-admin {
+    display: flex;
+    flex-direction: column;
+}
+
+    .option-admin a {
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 20px;
+        color: white;
+    }
+
+        .option-admin a:hover {
+            background-color: blue;
+            border: 1px solid white;
+        }

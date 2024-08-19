@@ -1,0 +1,25 @@
+﻿@model IEnumerable<EventManagement.Models.EventType>
+
+@{
+    ViewBag.Title = "Conference";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="confe-container">
+
+    @Html.Action("ConferLeftPartial", "Event")
+
+    <div id="confe-content"></div>
+
+    <script>
+        //var newestNews = @Html.Raw(Json.Encode(Model));
+    </script>
+
+    @Html.Action("ConferRightPartial", "Event")
+</div>
+
+
+<script src=@Url.Content("~/Scripts/JS/Component_Conference/ConferenceContent.jsx") type="module"></script>
+<link rel="stylesheet" href="~/Scripts/css/Component_Conference/ConferenceContent.css" />
+<link rel="stylesheet" href="~/Scripts/css/Pages/ConfirmModal.css" />
+

@@ -1,0 +1,90 @@
+﻿.registration-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.registration-modal {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.registration-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+    .registration-modal-header h2 {
+        margin: 0;
+        font-size: 1.5rem;
+        color: #333;
+    }
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #666;
+}
+
+.registration-modal-body {
+    padding: 24px;
+}
+
+.registration-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .registration-table th,
+    .registration-table td {
+        text-align: left;
+        padding: 12px;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .registration-table th {
+        background-color: #f5f5f5;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .registration-table tr:last-child td {
+        border-bottom: none;
+    }
+
+    .registration-table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .registration-table tr:hover {
+        background-color: #f0f0f0;
+    }
+
+.stt-column {
+    width: 50px;
+    min-width: 50px;
+    max-width: 50px;
+    text-align: center;
+}
+
+.regisDay-column {
+    width: 120px;
+    text-align: center;
+}

@@ -1,0 +1,91 @@
+﻿#main-panel {
+    flex: 1;
+}
+.AddAccount-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.admin-dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+.Accountdrop {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    position: absolute;
+    top: 50px;
+    width: 125px;
+    background-color: lightgray;
+}
+
+    .Accountdrop span {
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+.AccountAvatar {
+    display: flex;
+    flex-direction: row;
+}
+
+.Accountdrop span a {
+    text-decoration: none;
+    color: black;
+}
+
+.Accountdrop span:hover {
+    background-color: blue;
+    color: white;
+}
+
+.div-form {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.Account-input {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.btn-submit {
+    width: 97%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+}

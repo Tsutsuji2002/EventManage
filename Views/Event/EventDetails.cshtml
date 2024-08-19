@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "EventDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container">
+
+    @Html.Action("LeftPartial", "Home")
+
+    <div id="content" data-event-id="@ViewBag.ID"></div>
+
+    @Html.Action("RightPartial", "Home")
+</div>
+
+<script src=@Url.Content("~/Scripts/JS/Component_Event/EventDetails.jsx") type="module"></script>
+<link rel="stylesheet" href="~/Scripts/css/Component_Event/EventDetails.css" />
+

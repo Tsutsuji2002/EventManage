@@ -1,0 +1,117 @@
+﻿.user-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.user-outside {
+    flex: 1;
+    background-color: lightblue;
+}
+
+.user-aside-drop {
+    width: 50%;
+    border: 1px solid white;
+    position: absolute;
+    background-color: rgb(107, 107, 243);
+}
+
+.user-sidebar {
+    display: block;
+    width: 250px;
+    height: 100%;
+    border: 1px solid;
+    background-color: #27374D;
+    color: white;
+}
+
+.hiddenimg {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.user-main-panel {
+    width: 100%;
+}
+
+.user-container {
+    background-color: rgb(76, 76, 243);
+}
+
+.user-image-container {
+    display: flex;
+    width: 255px;
+    margin-bottom: 10px;
+    height: 220px;
+    margin: auto;
+}
+
+.user-edit-button {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    background-color: rgb(107, 107, 243);
+    cursor: pointer;
+    color: white;
+}
+
+    .user-edit-button a {
+        color: white;
+        text-decoration: none;
+    }
+
+.user-image-holder {
+    justify-self: center;
+    margin: auto;
+    width: 250px;
+    height: auto;
+    border: 2px solid;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.user-container {
+    display: flex;
+    border: 1px solid;
+    min-width: 400px;
+    max-width: 600px;
+    margin: auto;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.user-info {
+    border-bottom: 1px solid;
+    display: flex;
+    flex-direction: row;
+}
+
+    .user-info div span {
+        display: block;
+        color: white;
+    }
+
+@media screen and (max-width: 768px) {
+    .user-sidebar {
+        display: none;
+    }
+
+    .hiddenimg {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 571px) {
+    .user-container {
+        min-width: 200px;
+        max-width: 300px;
+    }
+
+    .user-info div span {
+        font-size: 15px;
+    }
+}

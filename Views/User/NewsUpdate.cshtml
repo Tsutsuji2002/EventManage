@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "NewsUpdate";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="user-content">
+</div>
+<script>
+        window.newsId = @ViewBag.NewsID;
+</script>
+<script src=@Url.Content("~/Scripts/JS/Component_User/NewsUpdate.jsx") crossorigin="anonymous"></script>
+<link rel="stylesheet" href="~/Scripts/css/Component_User/NewsUpdate.css" />

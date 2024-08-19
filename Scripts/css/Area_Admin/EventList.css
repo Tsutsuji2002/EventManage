@@ -1,0 +1,269 @@
+﻿.Event-wrapper {
+    display: flex;
+    flex-direction: row;
+    min-height: 100%;
+    width: 100%;
+    background-color: #EEEEEE;
+}
+
+.Event-sidebar {
+    background-color: #3f5064;
+}
+
+.Event-main-panel {
+    height: 100%;
+    flex: 1;    
+}
+
+.Event-form {
+    display: flex;
+    white-space: nowrap;
+    height: 100%;
+}
+
+    .Event-form input {
+        margin-top: 10px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    .Event-form button {
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+.Event-input {
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 3px;
+}
+
+.Event-picHidden {
+    display: flex;
+    width: 40px;
+    border: 1px solid;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.Event-body-nav-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(155, 128, 74);
+}
+
+.Event-items {
+    display: flex;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: white;
+    flex-direction: row;
+}
+
+.Event-image {
+    width: 120px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.Event-info-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.info-Event {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-title-Event span {
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: blue;
+    cursor: pointer;
+    font-weight: bold;
+    height: fit-content;
+}
+
+.info-title-Event {
+    display: flex;
+    overflow: hidden;
+    height: 30px;
+    text-align: left;
+}
+
+#Event-title {
+    margin-top: 0;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    line-height: 1.5;
+}
+
+.header-table {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-Event span {
+    font-style: italic;
+    opacity: 0.65;
+    font-size: 13px;
+}
+
+.Event-Description {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.Event-AddNews {
+    border-radius: 5px;
+    height: 100px;
+    font-size: 20px;
+    width: 100px;
+    font-weight: bold;
+    margin: 5px;
+    cursor: pointer;
+    border-color: blue;
+}
+
+.Event-Header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.Event-AddNews:hover {
+    background-color: rgb(71, 71, 252);
+    color: white;
+}
+
+.Event-AddLocation {
+    border-radius: 5px;
+    height: 50px;
+    font-size: 20px;
+    width: 100px;
+    font-weight: bold;
+    margin: 5px;
+    cursor: pointer;
+    border-color: brown;
+}
+
+    .Event-AddLocation:hover {
+        background-color: rgb(165, 69, 69);
+        color: white;
+    }
+
+.Event-button {
+    margin: auto;
+}
+.Event-button button,
+.Event-button span{
+    display:flex;
+    justify-content:center;
+    padding:10px;
+    white-space: nowrap;
+    margin-top:10px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.Event-input-layout {
+    height: 50px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 170px;
+    font-size: 18px;
+    order: -1;
+}
+
+.Event-button button {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: auto;
+    padding: 10px;
+}
+
+
+
+#Event-table th,
+#Event-table td {
+    width: fit-content;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid;
+}
+
+.pagination {
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    width:fit-content;
+}
+
+    .pagination div {
+        width: fit-content;
+        display: flex;
+        margin: auto;
+    }
+
+.pagesNum a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    cursor: pointer;
+    width: 40px;
+    padding: 3px;
+    font-size: 18px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    background-color: #808080;
+    color: white;
+    font-weight: bold;
+    height: 40px;
+}
+
+    .pagesNum a:hover {
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+    }
+
+.PagesButton {
+    border: 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 60px;
+    font-size: 18px;
+    background-color: #808080;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+}
+
+    .PagesButton:active {
+        background-color: blue;
+        color: white;
+    }

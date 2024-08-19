@@ -1,0 +1,181 @@
+﻿.semi-main {
+    display: flex;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.semi-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.semi-content {
+    width: 100%;
+    height: fit-content;
+}
+.semi-img {
+    width:200px;
+    height:100%;
+    border-bottom-left-radius:10px;
+    border-top-left-radius:10px;
+    
+}
+
+.semi-data {
+    flex: 1;
+}
+
+#semi-content {
+    width:60%;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #B2BEB5;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    height: fit-content;
+    margin-bottom: 10px;
+}
+
+.semi-table {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 2px darkblue;
+    border: 1px solid;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.semi-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.semi-headerow {
+    justify-content: space-between
+}
+
+.semi-cell {
+
+    justify-content: space-between;
+}
+
+    .semi-cell a {
+        text-decoration: none;
+    }
+
+#semi-title {
+    color: blue;
+    font-size: 18px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: left;
+    padding-left: 10px;
+}
+
+#semi-regis {
+    width: 100px;
+    display: flex;
+    border: 1px solid blue;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    white-space: nowrap;
+}
+
+    #semi-regis:hover {
+        background-color: blue;
+        color: white;
+    }
+
+.semi-descrip{
+    font-size: 14px;
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+#semi-upuser {
+    font-size: 14px;
+    opacity: 0.7;
+    font-style: italic;
+    padding-left: 5px;
+}
+
+#semi-update {
+    font-size: 14px;
+    opacity: 0.7;
+    font-style: italic;
+    padding-right: 10px;
+}
+
+.semi-pagination {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.semi-pagesNum {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+    .semi-pagesNum a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid;
+        cursor: pointer;
+        width: 20px;
+        padding: 3px;
+        border-radius: 10px;
+    }
+
+        .semi-pagesNum a:hover {
+            background-color: blue;
+            color: white;
+        }
+
+.semi-PagesButton {
+    border: 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+    .semi-PagesButton:active {
+        background-color: blue;
+        color: white;
+    }
+
+@media screen and (max-width: 768px) {
+    #semi-content {
+        width: 100%;
+    }
+
+    #semi-regis {
+        width: 90px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .semi-main {
+        width: 100%;
+        margin: 5px;
+    }
+}

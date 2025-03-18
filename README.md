@@ -95,6 +95,7 @@ Add user authentication
 The "Usage" section uses the example you provided. Feel free to expand it based on your application's functionality.
 Since the project includes ReactJS for the frontend (as per your updated tech stack), you might need to add additional steps in the "Installation" section for frontend dependencies, such as:
 
+```bash
   cd EventManage
   npm install
 

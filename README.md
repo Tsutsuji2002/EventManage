@@ -98,6 +98,6 @@ Since the project includes ReactJS for the frontend (as per your updated tech st
 ```bash
   cd EventManage
   npm install
-
+```
 If this applies, you can add it after the cd EventManage step.
 The "Roadmap" section lists two items as requested. You can expand it with more milestones as needed.
